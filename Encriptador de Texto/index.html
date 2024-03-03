@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Encriptador y Desencriptador de Texto</title>
+</head>
+<body>
+
+<h2>Encriptador y Desencriptador de Texto</h2>
+
+
+<form action="" class="formulario">
+    <div class="textarea-container">
+        <label for="textoOriginal" class="label">Texto Original:</label>
+        <textarea id="textoOriginal" class="textarea"></textarea>
+    </div>
+    <button class="btn btn-1" type="button" onclick="encriptarTexto()">Encriptar</button>
+
+    <button class="btn btn-1" type="button" onclick="desencriptarTexto()">Desencriptar</button>
+
+    <button class="btn btn-1" onclick="limpiar()">Limpiar</button>
+</form>
+
+
+
+<div class="textarea-container">
+    <form action="" class="formulario2">
+        <textarea id="resultado" class="textarea2"></textarea>
+        <button class="btn btn-1" onclick="copiarTexto()">Copiar Texto</button>
+
+
+    </form>
+
+</div>
+
+<br>
+<footer><h2>Elaborado por Kevin Alberto Cruz Gómez-Grupo #6 Alura+One 2024</h2></footer>
+
+
+<script src="encriptar.js">
+
+</script>
+
+</body>
+</html>

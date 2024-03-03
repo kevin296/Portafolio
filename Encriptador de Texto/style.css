@@ -1,0 +1,200 @@
+body{
+    background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)),
+    url(img/fondo3.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+.lettra{
+  color: #ffffff;
+ background-color: #ffffff;
+}
+.formulario{
+
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    /* filter:blur(10px); */
+    backdrop-filter:blur(1px);
+    height: 500px;
+    width: 795px;
+    text-align: center;
+  
+
+}
+.formulario2{
+
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    /* filter:blur(10px); */
+    backdrop-filter:blur(1px);
+    height: 500px;
+    width: 400px;
+     margin-left:850px ;
+  margin-top: -500px;
+
+}
+.texto {
+
+
+    color: rgb(235, 239, 243);
+    padding: 80px;
+    margin-top: 100px;
+}
+.textarea2{
+    width: 200px;
+    height: 200px;
+    resize: none; 
+    padding-top: 30px;
+    padding: 50px;
+    margin-left: 45px;
+  position: relative;
+  margin-top: 65px;
+}
+
+
+
+.textarea{
+    width: 600px;
+    height: 200px;
+    resize: none; 
+    padding-top: 30px;
+    padding: 50px;
+    margin-left: 45px;
+  position: relative;
+  margin-top: 40px;
+}
+
+
+h2, label {
+    color: white;
+    text-align: center;
+}
+.textarea-container {
+    text-align: left;
+}
+
+
+
+
+
+
+
+/* Estilos para el botón */
+.btn{
+    position: relative;
+    padding: 10px 40px;
+    text-decoration: none;
+    color: #f3ebeb;
+    letter-spacing: 10px;
+    text-indent: 10px;
+    z-index: 2;
+    background-color: rgba(20, 19, 19, 0.8); 
+    margin-top: 25px;
+    margin-right: 15px;
+}
+
+
+.btn-1{
+    overflow: hidden;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    z-index: 2;
+}
+
+
+.btn-1::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    left: 0;
+    top: -200%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transition: all 0.6s ease;
+    z-index: -1;
+}
+
+.btn-1:hover:before{
+    top: 0;
+    border-radius: 0%;
+}
+
+
+.btn-2{
+    border: 3px solid;
+}
+.btn-2:hover{
+    background-color: #001a2b;
+    box-shadow: 0 0 20px var(--color);
+    border-color: var(--color);
+}
+.btn-2 span:nth-child(n){
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 3px solid;
+    transition: all 0.6s ease;
+}
+.btn-2 span:nth-child(1){
+    right: 10%;
+    top: -10px;
+    background-color: #cf3d3d;
+}
+
+.btn-2 span:nth-child(2){
+    left: 10%;
+    bottom: -10px;
+}
+
+.btn-2:hover span:nth-child(1){
+    right: 80%;
+    transform: rotate(90deg);
+    color: var(--color);
+    background-color: var(--color);
+    
+}
+
+.btn-2:hover span:nth-child(2){
+    left: 80%;
+    transform: rotate(90deg);
+    color: var(--color);
+}
+
+.btn-3{
+    transition: all 0.6s ease;
+}
+
+.btn-3::after{
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 110%;
+    left: -10%;
+    top: 0;
+    transform: skew(20deg, 0deg);
+    background-color: #ffffff;
+    z-index: -1;
+    transition: all 0.4s ease;
+}
+
+.btn-3::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transform: skew(20deg, 0deg);
+    border: 3px solid #03cc57;
+    transition: all 0.4s ease;
+    z-index: -1;
+}
+
+.btn-3:hover::after{
+    background-color: #ffffff31;
+    transform: skew(20deg, 0deg) translateX(240px);
+}
+
+.btn-3:hover::before{
+    background-color: #03cc57;
+    border: 3px solid #029740;
+    transform: skew(20deg, 0deg) scale(1.1);
+}
